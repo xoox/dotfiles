@@ -9,7 +9,7 @@ set mouse=a
 set lines=36
 if has("win32")
   " For Windows
-  set guifont=Cascadia_Code_PL:h16
+  set guifont=Cascadia_Code_NF:h16
 else
-  set guifont=Cascadia\ Code\ PL\ 16
+  set guifont=Cascadia\ Code\ NF\ 16
 endif
