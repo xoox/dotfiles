@@ -25,7 +25,6 @@ vim.api.nvim_create_autocmd('UIEnter', {
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
-vim.o.cursorline = true -- Highlight the line where the cursor is on.
 vim.o.scrolloff = 10 -- Keep this many screen lines above/below the cursor.
 vim.o.list = true -- Show <tab> and trailing spaces.
 
@@ -125,4 +124,4 @@ vim.keymap.set('', '<End>', 'g$')
 vim.o.background = 'dark'
 vim.o.termguicolors = true
 vim.o.mouse = ''
-vim.g.colors_name = 'torte'
+vim.cmd([[colorscheme torte]])
