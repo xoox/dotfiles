@@ -4,12 +4,15 @@
 
 source $VIMRUNTIME/gvimrc_example.vim
 
-set mouse=a
-:colo torte
-set lines=36
 if has("win32")
   " For Windows
   set guifont=Cascadia_Code_NF:h16
 else
   set guifont=Cascadia\ Code\ NF\ 16
 endif
+
+set go-=r
+set go+=l
+set mouse=a
+:colo torte
+set lines=36

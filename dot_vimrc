@@ -39,22 +39,24 @@ autocmd FileType gitcommit setlocal spell
 " undo settings in example vimrc
 set nobackup
 set noundofile
-set mouse=
 
 set fileformat=unix
 set fileformats=unix,dos
-set background=dark
+set fileencodings=utf-8,prc,big5,unicode
+
 set shiftwidth=4
 set softtabstop=4
 set expandtab
 set smarttab
+
 set fo+=nmB
+
 :map <Up> gk
 :map <Down> gj
 :map <Home> g^
 :map <End> g$
-set fileencodings=utf-8,prc,big5,unicode
-set go-=r
-set go+=l
-:colo torte
+
+set background=dark
 set termguicolors
+set mouse=
+:colo torte

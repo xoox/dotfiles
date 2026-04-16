@@ -75,3 +75,41 @@ vim.api.nvim_create_user_command('GitBlameLine', function()
 end, { desc = 'Print the git blame for the current line' })
 
 require("config.lazy")
+
+-- Auto commands
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "gitcommit",
+  command = "setlocal spell",
+})
+
+-- Backup and undo settings
+vim.o.backup = false
+vim.o.undofile = false
+
+-- File format
+vim.o.fileformat = "unix"
+vim.opt.fileformats = { "unix", "dos" }
+
+-- Encoding
+vim.opt.fileencodings = { "utf-8", "prc", "big5", "unicode" }
+
+-- Indentation
+vim.o.shiftwidth = 4
+vim.o.softtabstop = 4
+vim.o.expandtab = true
+vim.o.smarttab = true
+
+-- Formatting
+vim.opt.formatoptions:append("nmB")
+
+-- Key mappings (arrow keys for wrapped lines, Home/End for display)
+vim.keymap.set("", "<Up>", "gk")
+vim.keymap.set("", "<Down>", "gj")
+vim.keymap.set("", "<Home>", "g^")
+vim.keymap.set("", "<End>", "g$")
+
+-- Term Appearance
+vim.o.background = "dark"
+vim.o.termguicolors = true
+vim.o.mouse = ""
+vim.g.colors_name = "torte"
