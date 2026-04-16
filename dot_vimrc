@@ -50,6 +50,8 @@ set expandtab
 set smarttab
 
 set fo+=nmB
+set ignorecase
+set smartcase
 
 :map <Up> gk
 :map <Down> gj
