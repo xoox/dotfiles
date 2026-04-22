@@ -158,4 +158,5 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " Common extensions
-" coc-json, @yaegassy/coc-ruff
+let g:coc_global_extensions = ['coc-json', 'coc-stylua', 'coc-prettier', 'coc-toml', 'coc-yaml']
+" @yaegassy/coc-ruff (Python)
