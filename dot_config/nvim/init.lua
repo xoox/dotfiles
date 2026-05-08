@@ -84,6 +84,9 @@ vim.opt.formatoptions:append('nmB')
 
 require('config.lazy')
 
+-- LSP
+vim.lsp.enable({ 'ruff' })
+
 -- Format using conform
 vim.api.nvim_create_user_command('Format', function(args)
   local range = nil
